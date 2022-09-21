@@ -1,0 +1,27 @@
+body{
+
+  background-color: #E7F6F2;
+  text-align: inherit;
+}
+h1{
+
+  color: white;
+  text-decoration: underline;
+  font-family: verdana,sans-serif;
+}
+.MY{
+
+  color: grey;
+  font-family: verdana,sans-serif;
+}
+
+h2{
+  text-decoration: underline;
+  color:#42032C;
+  font-family: verdana,sans-serif;
+}
+h3{
+
+  color:#1B0044;
+  font-family: verdana,sans-serif;
+}
