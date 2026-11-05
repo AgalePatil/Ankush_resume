@@ -1,126 +1,990 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ankush Agle - Automation Test Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional resume of Ankush Agle - QA Automation Engineer and SDET.">
+    <title>Ankush Agle | QA Automation Engineer | SDET</title>
+
+    <style>
+        :root {
+            --primary: #123b68;
+            --secondary: #0878c9;
+            --dark: #1d2939;
+            --text: #475467;
+            --muted: #667085;
+            --light: #f4f7fb;
+            --border: #e4e9f0;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--light);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 40px auto;
+            padding: 50px 60px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 8px 35px rgba(16, 42, 67, 0.08);
+        }
+
+        /* HEADER */
+
+        .header {
+            text-align: center;
+            padding-bottom: 28px;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .header h1 {
+            color: var(--primary);
+            font-size: 36px;
+            font-weight: 750;
+            letter-spacing: 0.5px;
+        }
+
+        .designation {
+            color: var(--secondary);
+            font-size: 19px;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .contact {
+            margin-top: 14px;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+        }
+
+        .contact span {
+            white-space: nowrap;
+        }
+
+        /* SECTIONS */
+
+        section {
+            margin-top: 30px;
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-size: 20px;
+            font-weight: 700;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 9px;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+
+        li::marker {
+            color: var(--secondary);
+        }
+
+        strong {
+            color: var(--dark);
+        }
+
+        /* SUMMARY */
+
+        .summary {
+            font-size: 15px;
+            line-height: 1.9;
+            text-align: justify;
+        }
+
+        /* SKILLS */
+
+        .skill-group {
+            margin-bottom: 14px;
+        }
+
+        .skill-group strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+        }
+
+        .tag {
+            background: #edf4fc;
+            color: #164d80;
+            border: 1px solid #d9e7f5;
+            border-radius: 5px;
+            padding: 4px 10px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* EXPERIENCE AND PROJECTS */
+
+        .experience-item,
+        .project-item {
+            margin-bottom: 23px;
+        }
+
+        .job-title {
+            color: var(--dark);
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .company {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .date {
+            color: var(--muted);
+            font-size: 13px;
+            font-style: italic;
+        }
+
+        .project-title {
+            color: var(--primary);
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        .project-stack {
+            color: var(--secondary);
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        /* EDUCATION */
+
+        .education-item {
+            margin-bottom: 12px;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            margin-top: 35px;
+            padding-top: 18px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        /* PRINT */
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                max-width: 100%;
+                margin: 0;
+                padding: 20px;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            section {
+                break-inside: avoid;
+            }
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 25px 20px;
+            }
+
+            .header h1 {
+                font-size: 27px;
+            }
+
+            .designation {
+                font-size: 16px;
+            }
+
+            .contact {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section-title {
+                font-size: 18px;
+            }
+
+            .summary {
+                text-align: left;
+            }
+        }
+    </style>
 </head>
-<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333;">
 
-  <div style="max-width: 900px; margin: 40px auto; background: #ffffff; padding: 40px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+<body>
 
-    <!-- Header -->
-    <div style="text-align: center; border-bottom: 2px solid #004080; padding-bottom: 20px;">
-      <h1 style="font-size: 32px; color: #004080; margin: 0;">Ankush Agle</h1>
-      <p style="font-size: 18px; color: #666;">🚀 Automation Test Engineer</p>
-      <p style="font-size: 15px;">📞 9284420259 &nbsp; | &nbsp; 📧 <a href="mailto:ankushagle777@gmail.com" style="color: #004080;">ankushagle777@gmail.com</a></p>
-    </div>
+<div class="container">
 
-    <!-- Objective -->
-    <section style="margin-top: 30px;">
-      <h2 style="color: #004080; border-bottom: 1px solid #ccc; padding-bottom: 6px;">🎯 Objective</h2>
-      <p style="font-size: 15px;">
-        QA Automation Engineer with 5+ years of experience in both Manual and Automation Testing using Selenium WebDriver with Java.
-        Expert in creating frameworks, API testing, SQL validations, and working with TestNG, Maven, Git, and Postman in Agile teams across ERP, Investment Banking, and E-commerce domains.
-        Adaptable, fast learner, and driven by quality.
-      </p>
+    <!-- PROFESSIONAL HEADER -->
+
+    <header class="header">
+        <h1>Ankush Agle</h1>
+
+        <div class="designation">
+            QA Automation Engineer | SDET
+        </div>
+
+        <div class="contact">
+            <span>📞 +91 9284420259</span>
+            <span>✉️
+                <a href="mailto:ankushagle777@gmail.com">
+                    ankushagle777@gmail.com
+                </a>
+            </span>
+            <span>📍 Ahmedabad, Gujarat, India</span>
+        </div>
+    </header>
+
+
+    <!-- PROFESSIONAL SUMMARY -->
+
+    <section>
+        <h2 class="section-title">Professional Summary</h2>
+
+        <p class="summary">
+            QA Automation Engineer with 7+ years of experience in Software
+            Quality Assurance, specializing in Manual Testing, Test Automation,
+            API Testing, Database Validation, and Automation Framework
+            Development.
+
+            Strong hands-on experience with Selenium WebDriver, Core Java,
+            TestNG, Maven, Page Object Model (POM), Hybrid Framework Design,
+            and REST API Testing using Postman.
+
+            Experienced in designing reusable automation components,
+            developing maintainable test suites, executing regression
+            strategies, validating backend business logic, and identifying
+            critical application defects across ERP, Investment Banking,
+            and E-commerce domains.
+
+            Currently expanding automation engineering expertise with
+            Playwright, JavaScript, and TypeScript, focusing on modern
+            browser automation, scalable test architecture, and CI/CD
+            integration.
+
+            Strong understanding of SDLC, STLC, Agile methodologies,
+            risk-based testing, defect lifecycle management, and
+            software quality engineering practices.
+        </p>
     </section>
 
-    <!-- Domains -->
-    <section style="margin-top: 25px;">
-      <h2 style="color: #004080;">🌐 Domains Worked With</h2>
-      <ul style="margin-left: 20px;">
-        <li>Investment Banking</li>
-        <li>E-Commerce</li>
-        <li>ERP Systems</li>
-      </ul>
+
+    <!-- CORE COMPETENCIES -->
+
+    <section>
+        <h2 class="section-title">Core Competencies</h2>
+
+        <ul>
+            <li>Test Strategy, Test Planning, and Test Scenario Design.</li>
+            <li>Manual Testing and Automation Testing.</li>
+            <li>Web Application and Cross-Browser Testing.</li>
+            <li>Automation Framework Architecture and Development.</li>
+            <li>API Testing and Backend Integration Validation.</li>
+            <li>Database Testing and SQL Query Validation.</li>
+            <li>Regression Suite Optimization and Test Maintenance.</li>
+            <li>Risk-Based Testing and Requirement Traceability.</li>
+            <li>Defect Reporting, Root Cause Analysis, and Retesting.</li>
+            <li>Agile Scrum, Sprint Planning, and Quality Assurance.</li>
+        </ul>
     </section>
 
-    <!-- Job Profile -->
-    <section style="margin-top: 25px;">
-      <h2 style="color: #004080;">💼 Job Profile</h2>
-      <ul style="margin-left: 20px;">
-        <li>Strong understanding of SDLC & STLC, with expertise in analyzing SRS and creating test scenarios.</li>
-        <li>Experienced in Sanity, Functional, Regression, GUI, API, Cross-browser, and Database Testing.</li>
-        <li>Expert in Selenium WebDriver, Core Java, TestNG, Maven, Git, JDBC, and dynamic XPath locators.</li>
-        <li>Participated in Agile processes and scrum ceremonies, using JIRA for defect and sprint tracking.</li>
-        <li>Worked with Hybrid Frameworks and designed modular, scalable test automation suites.</li>
-        <li>Good understanding of SQL and experience with Oracle & Microsoft SQL Server.</li>
-        <li>Basic knowledge of BDD with Cucumber for writing readable test scenarios.</li>
-        <li>Comfortable with Postman for API Testing including request chaining, environment usage, and validations.</li>
-      </ul>
+
+    <!-- TECHNICAL SKILLS -->
+
+    <section>
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skill-group">
+            <strong>Programming Languages</strong>
+            <div class="skill-tags">
+                <span class="tag">Core Java</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">SQL</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <strong>Automation Technologies</strong>
+            <div class="skill-tags">
+                <span class="tag">Selenium WebDriver</span>
+                <span class="tag">Playwright</span>
+                <span class="tag">TestNG</span>
+                <span class="tag">Cucumber BDD</span>
+                <span class="tag">Page Object Model</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <strong>Automation Frameworks & Architecture</strong>
+            <div class="skill-tags">
+                <span class="tag">Hybrid Framework</span>
+                <span class="tag">Data-Driven Testing</span>
+                <span class="tag">Modular Framework</span>
+                <span class="tag">Reusable Utilities</span>
+                <span class="tag">Parallel Execution Concepts</span>
+                <span class="tag">Test Reporting</span>
+                <span class="tag">Configuration Management</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <strong>API Testing</strong>
+            <div class="skill-tags">
+                <span class="tag">Postman</span>
+                <span class="tag">REST API</span>
+                <span class="tag">HTTP Methods</span>
+                <span class="tag">JSON Validation</span>
+                <span class="tag">Authentication</span>
+                <span class="tag">Request Chaining</span>
+                <span class="tag">Response Validation</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <strong>Database & Backend Testing</strong>
+            <div class="skill-tags">
+                <span class="tag">Microsoft SQL Server</span>
+                <span class="tag">Oracle</span>
+                <span class="tag">JDBC</span>
+                <span class="tag">Joins</span>
+                <span class="tag">Subqueries</span>
+                <span class="tag">CRUD Validation</span>
+                <span class="tag">Data Integrity</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <strong>Build, Version Control & CI/CD</strong>
+            <div class="skill-tags">
+                <span class="tag">Maven</span>
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Jenkins</span>
+                <span class="tag">CI/CD Concepts</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <strong>Defect Management & Project Tools</strong>
+            <div class="skill-tags">
+                <span class="tag">JIRA</span>
+                <span class="tag">TFS</span>
+                <span class="tag">Agile Scrum</span>
+                <span class="tag">Test Case Management</span>
+            </div>
+        </div>
+
+        <div class="skill-group">
+            <strong>Testing Methodologies</strong>
+            <div class="skill-tags">
+                <span class="tag">Functional Testing</span>
+                <span class="tag">Sanity Testing</span>
+                <span class="tag">Smoke Testing</span>
+                <span class="tag">Regression Testing</span>
+                <span class="tag">Integration Testing</span>
+                <span class="tag">GUI Testing</span>
+                <span class="tag">Cross-Browser Testing</span>
+                <span class="tag">Database Testing</span>
+                <span class="tag">Non-Functional Testing</span>
+                <span class="tag">Retesting</span>
+            </div>
+        </div>
     </section>
 
-    <!-- Academic Qualifications -->
-    <section style="margin-top: 25px;">
-      <h2 style="color: #004080;">🎓 Academic Qualifications</h2>
-      <p><strong>Bachelor of Engineering</strong> – Electrical Engineering</p>
-      <p>Chhatrapati Shahu College of Engineering, Aurangabad</p>
-      <p>Dr. Babasaheb Ambedkar Marathwada University (2019)</p>
-      <p>10th – 78.18% | 12th – 76% | BE – 76.16%</p>
+
+    <!-- AUTOMATION ENGINEERING EXPERTISE -->
+
+    <section>
+        <h2 class="section-title">Automation Engineering Expertise</h2>
+
+        <ul>
+            <li>
+                <strong>Framework Architecture:</strong>
+                Designing modular and maintainable automation frameworks
+                using Page Object Model, reusable components, utility
+                classes, and centralized configuration management.
+            </li>
+
+            <li>
+                <strong>Selenium WebDriver:</strong>
+                Automating web applications using dynamic XPath, CSS
+                selectors, explicit waits, browser interactions, alerts,
+                frames, windows, dropdowns, and JavaScript execution.
+            </li>
+
+            <li>
+                <strong>TestNG:</strong>
+                Implementing annotations, assertions, DataProviders,
+                parameterization, grouping, prioritization, and
+                test execution strategies.
+            </li>
+
+            <li>
+                <strong>Playwright:</strong>
+                Developing modern browser automation skills using
+                JavaScript/TypeScript, locators, auto-waiting, assertions,
+                browser contexts, fixtures, hooks, and trace-based debugging.
+            </li>
+
+            <li>
+                <strong>BDD:</strong>
+                Implementing behavior-driven test scenarios using
+                Gherkin syntax, Feature Files, Step Definitions,
+                Hooks, and Cucumber.
+            </li>
+
+            <li>
+                <strong>API Automation:</strong>
+                Validating REST endpoints, HTTP status codes,
+                response headers, JSON payloads, authentication,
+                and business rules.
+            </li>
+
+            <li>
+                <strong>Database Validation:</strong>
+                Executing SQL queries to verify database records,
+                relationships, transaction results, and backend
+                data consistency.
+            </li>
+
+            <li>
+                <strong>CI/CD Integration:</strong>
+                Working with Maven, Git, GitHub, and Jenkins-based
+                automation execution workflows.
+            </li>
+
+            <li>
+                <strong>Test Execution & Reporting:</strong>
+                Analyzing execution results, identifying failures,
+                investigating flaky tests, maintaining regression
+                suites, and communicating quality status.
+            </li>
+        </ul>
     </section>
 
-    <!-- Experience -->
-    <section style="margin-top: 25px;">
-      <h2 style="color: #004080;">🧑‍💻 Work Experience</h2>
-      <p><strong>Sourcepro Infotech, Ahmedabad</strong> — Automation Test Engineer<br>
-      <em>Nov 2022 – Present</em></p>
 
-      <p><strong>Just Logic Software, Pune</strong> — Software Test Engineer<br>
-      <em>Sept 2019 – Nov 2022</em></p>
+    <!-- PROFESSIONAL EXPERIENCE -->
+
+    <section>
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="experience-item">
+
+            <div class="job-title">
+                Automation Test Engineer
+            </div>
+
+            <div class="company">
+                Sourcepro Infotech, Ahmedabad
+            </div>
+
+            <div class="date">
+                November 2022 – Present
+            </div>
+
+            <ul>
+                <li>
+                    Analyze business requirements and functional
+                    specifications to prepare test scenarios,
+                    test cases, and execution strategies.
+                </li>
+
+                <li>
+                    Design and execute automation scripts using
+                    Selenium WebDriver, Java, TestNG, and Maven.
+                </li>
+
+                <li>
+                    Develop and maintain reusable automation
+                    components using Page Object Model and
+                    Hybrid Framework architecture.
+                </li>
+
+                <li>
+                    Perform functional, sanity, regression,
+                    integration, GUI, API, and database testing.
+                </li>
+
+                <li>
+                    Validate application workflows, business
+                    rules, backend transactions, and database
+                    records using SQL queries.
+                </li>
+
+                <li>
+                    Perform API testing using Postman, validating
+                    request payloads, response structures,
+                    status codes, and business logic.
+                </li>
+
+                <li>
+                    Identify, document, track, and retest defects
+                    while collaborating with developers and
+                    business stakeholders.
+                </li>
+
+                <li>
+                    Participate in Agile ceremonies, sprint
+                    activities, requirement discussions,
+                    and release validation.
+                </li>
+
+                <li>
+                    Maintain automation scripts and analyze
+                    execution failures to improve test
+                    reliability and maintainability.
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="experience-item">
+
+            <div class="job-title">
+                Software Test Engineer
+            </div>
+
+            <div class="company">
+                Just Logic Software, Pune
+            </div>
+
+            <div class="date">
+                September 2019 – November 2022
+            </div>
+
+            <ul>
+                <li>
+                    Performed manual and automation testing
+                    for web-based enterprise applications.
+                </li>
+
+                <li>
+                    Prepared test plans, test scenarios,
+                    test cases, and test data based on
+                    functional requirements.
+                </li>
+
+                <li>
+                    Executed functional, regression,
+                    sanity, GUI, cross-browser, and
+                    database testing.
+                </li>
+
+                <li>
+                    Automated application workflows using
+                    Selenium WebDriver and Core Java.
+                </li>
+
+                <li>
+                    Performed API testing and backend
+                    validation to ensure application
+                    functionality and data consistency.
+                </li>
+
+                <li>
+                    Reported defects, participated in
+                    defect triage, performed retesting,
+                    and supported release validation.
+                </li>
+
+                <li>
+                    Collaborated with development and
+                    QA teams throughout the software
+                    development lifecycle.
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Technical Skills -->
-    <section style="margin-top: 25px;">
-      <h2 style="color: #004080;">🛠️ Technical Skills</h2>
-      <ul style="margin-left: 20px;">
-        <li><strong>OS:</strong> Windows 8, 10, 11</li>
-        <li><strong>Languages:</strong> Core Java, SQL</li>
-        <li><strong>Bug Tools:</strong> JIRA, TFS</li>
-        <li><strong>Databases:</strong> Oracle, Microsoft SQL Server</li>
-        <li><strong>Tools:</strong> Selenium, Maven, TestNG, Git, Postman</li>
-        <li><strong>Others:</strong> API Testing, Framework Designing, Backend Testing</li>
-      </ul>
+
+    <!-- PROJECT EXPERIENCE -->
+
+    <section>
+        <h2 class="section-title">Project Experience</h2>
+
+        <!-- PROJECT 1 -->
+
+        <div class="project-item">
+
+            <div class="project-title">
+                1. New Horizon Enterprise – ERP Platform
+            </div>
+
+            <div class="project-stack">
+                Domain: Enterprise Resource Planning (ERP)
+                | Selenium | Java | TestNG | Maven | SQL
+            </div>
+
+            <p>
+                Worked on an enterprise ERP application
+                covering multiple business processes and
+                interconnected functional modules.
+            </p>
+
+            <strong>Key Responsibilities & Contributions:</strong>
+
+            <ul>
+                <li>
+                    Designed and developed a Hybrid Automation
+                    Framework using Selenium WebDriver,
+                    Core Java, TestNG, and Maven.
+                </li>
+
+                <li>
+                    Automated 600+ test cases across
+                    9 ERP modules.
+                </li>
+
+                <li>
+                    Covered business workflows including
+                    Sales, Purchase, Material Requirements
+                    Planning (MRP), and other ERP modules.
+                </li>
+
+                <li>
+                    Implemented reusable page classes,
+                    common utility methods, centralized
+                    configuration, and test execution logic.
+                </li>
+
+                <li>
+                    Validated end-to-end business workflows
+                    and dependencies between ERP modules.
+                </li>
+
+                <li>
+                    Performed database validation to verify
+                    transaction records and backend data
+                    consistency.
+                </li>
+
+                <li>
+                    Executed functional and regression
+                    testing to ensure application stability.
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-item">
+
+            <div class="project-title">
+                2. Investment Banking Platform
+            </div>
+
+            <div class="project-stack">
+                Domain: Investment Banking | API Testing |
+                Functional Testing | Regression Testing
+            </div>
+
+            <p>
+                Worked on an investment banking platform
+                involving investor workflows, financial
+                business models, and investment-related
+                transactions.
+            </p>
+
+            <strong>Key Responsibilities & Contributions:</strong>
+
+            <ul>
+                <li>
+                    Performed functional, sanity, and
+                    regression testing of investment
+                    banking workflows.
+                </li>
+
+                <li>
+                    Validated investor journeys,
+                    financial business rules, and
+                    investment-related transactions.
+                </li>
+
+                <li>
+                    Performed API testing to validate
+                    service responses and business
+                    logic.
+                </li>
+
+                <li>
+                    Participated in capital structuring
+                    validation and risk-based test
+                    scenario preparation.
+                </li>
+
+                <li>
+                    Verified application behavior against
+                    expected financial calculations
+                    and business requirements.
+                </li>
+
+                <li>
+                    Identified functional inconsistencies
+                    and collaborated with stakeholders
+                    for defect resolution.
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-item">
+
+            <div class="project-title">
+                3. Tanta Gatha – E-Commerce Platform
+            </div>
+
+            <div class="project-stack">
+                Domain: E-Commerce | Functional Testing |
+                UI Testing | API Testing
+            </div>
+
+            <p>
+                Worked on an e-commerce application
+                focused on traditional textile products
+                and online shopping workflows.
+            </p>
+
+            <strong>Key Responsibilities & Contributions:</strong>
+
+            <ul>
+                <li>
+                    Tested end-to-end shopping workflows,
+                    including product browsing, product
+                    details, cart management, and checkout.
+                </li>
+
+                <li>
+                    Validated order placement and
+                    payment gateway integration scenarios.
+                </li>
+
+                <li>
+                    Tested multilingual functionality
+                    and cross-browser compatibility.
+                </li>
+
+                <li>
+                    Verified inventory updates and
+                    product availability after
+                    transaction workflows.
+                </li>
+
+                <li>
+                    Performed responsive UI testing
+                    across different screen sizes.
+                </li>
+
+                <li>
+                    Executed manual and automation
+                    testing to identify functional
+                    and usability defects.
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Projects -->
-    <section style="margin-top: 25px;">
-      <h2 style="color: #004080;">📂 Projects</h2>
 
-      <h3 style="margin-bottom: 5px;">1. ERP Domain – New Horizon Enterprise</h3>
-      <p>Designed and built Hybrid Automation Framework using Selenium + Java + TestNG + Maven.<br>
-      Automated 600+ cases across 9 ERP modules like Sales, Purchase, MRP, etc.</p>
+    <!-- TESTING KNOWLEDGE -->
 
-      <h3 style="margin-bottom: 5px;">2. Investment Banking Platform</h3>
-      <p>Performed API, Sanity, Regression Testing. Validated business models and investor workflows.<br>
-      Participated in capital structuring validation and risk-based scenario testing.</p>
+    <section>
+        <h2 class="section-title">QA & SDET Technical Knowledge</h2>
 
-      <h3 style="margin-bottom: 5px;">3. E-Commerce – Tanta Gatha</h3>
-      <p>Tested platform for traditional textile sales. Covered checkout flows, cart, multilingual support,<br>
-      payment gateway, responsiveness, and inventory updates with manual + automated testing.</p>
+        <ul>
+            <li>
+                <strong>SDLC & STLC:</strong>
+                Requirement Analysis, Test Planning,
+                Test Design, Test Execution,
+                Defect Reporting, and Test Closure.
+            </li>
+
+            <li>
+                <strong>Test Design Techniques:</strong>
+                Boundary Value Analysis, Equivalence
+                Partitioning, Decision Table Testing,
+                and State Transition Testing.
+            </li>
+
+            <li>
+                <strong>Defect Lifecycle:</strong>
+                New, Assigned, Open, Fixed,
+                Retest, Verified, Reopened,
+                and Closed.
+            </li>
+
+            <li>
+                <strong>Agile Methodology:</strong>
+                Sprint Planning, Daily Stand-ups,
+                Sprint Reviews, Retrospectives,
+                and Backlog Refinement.
+            </li>
+
+            <li>
+                <strong>Automation Best Practices:</strong>
+                Maintainable locators, reusable
+                methods, explicit synchronization,
+                test isolation, reliable assertions,
+                and meaningful execution reports.
+            </li>
+
+            <li>
+                <strong>Quality Engineering:</strong>
+                Risk-Based Testing, Regression
+                Optimization, Root Cause Analysis,
+                Test Coverage, and Defect Prevention.
+            </li>
+        </ul>
     </section>
 
-    <!-- Personal Info -->
-    <section style="margin-top: 25px;">
-      <h2 style="color: #004080;">🙋 Personal Information</h2>
-      <ul style="margin-left: 20px;">
-        <li><strong>Full Name:</strong> Ankush Rajabhau Agle</li>
-        <li><strong>DOB:</strong> 21 Feb 1997</li>
-        <li><strong>Phone:</strong> +91 9284420259</li>
-        <li><strong>Email:</strong> ankushagle777@gmail.com</li>
-        <li><strong>Permanent Address:</strong> Tondoli, Paithan, Aurangabad 431105</li>
-        <li><strong>Current Address:</strong> Balaji PG, Thaltej, Ahmedabad</li>
-        <li><strong>Languages Known:</strong> English, Marathi, Hindi</li>
-      </ul>
+
+    <!-- EDUCATION -->
+
+    <section>
+        <h2 class="section-title">Academic Qualifications</h2>
+
+        <div class="education-item">
+            <strong>Bachelor of Engineering – Electrical Engineering</strong>
+
+            <p>
+                Chhatrapati Shahu College of Engineering,
+                Aurangabad
+            </p>
+
+            <p>
+                Dr. Babasaheb Ambedkar Marathwada University
+                | 2019
+            </p>
+
+            <p>
+                <strong>Graduation Percentage:</strong> 76.16%
+            </p>
+        </div>
+
+        <div class="education-item">
+            <strong>Higher Secondary Education (12th)</strong>
+            <p>Percentage: 76%</p>
+        </div>
+
+        <div class="education-item">
+            <strong>Secondary School Education (10th)</strong>
+            <p>Percentage: 78.18%</p>
+        </div>
     </section>
 
-    <!-- Declaration -->
-    <section style="margin-top: 30px; text-align: left;">
-      <p>I hereby declare that the above details are true to the best of my knowledge and belief.</p>
-      <p style="margin-top: 40px;">Date: /07/2025</p>
-      <p>Place: Ahmedabad</p>
-      <p style="text-align: right; font-weight: bold;">Ankush Agle</p>
+
+    <!-- ADDITIONAL INFORMATION -->
+
+    <section>
+        <h2 class="section-title">Additional Information</h2>
+
+        <ul>
+            <li>
+                <strong>Current Location:</strong>
+                Ahmedabad, Gujarat, India
+            </li>
+
+            <li>
+                <strong>Languages:</strong>
+                English, Marathi, Hindi
+            </li>
+
+            <li>
+                <strong>Operating Systems:</strong>
+                Windows 10 and Windows 11
+            </li>
+
+            <li>
+                <strong>Professional Interests:</strong>
+                Automation Framework Development,
+                SDET Practices, API Automation,
+                Playwright, CI/CD, and Quality Engineering.
+            </li>
+        </ul>
     </section>
 
-  </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <p>
+            © 2026 Ankush Agle | QA Automation Engineer | SDET
+        </p>
+
+        <p>
+            Designed using HTML5 and CSS3
+        </p>
+    </footer>
+
+</div>
+
 </body>
 </html>
